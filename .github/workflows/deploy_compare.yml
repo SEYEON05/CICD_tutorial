@@ -33,7 +33,7 @@ jobs:
       run: |
         start_time=$(date +%s)
         ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.NON_DOCKER_HOST }} "
-        cd /home/ubunyu/CICD_tutorial
+        cd /home/ubuntu/CICD_tutorial
         git pull
         source env/bin/activate
         pip install -r requirements.txt
